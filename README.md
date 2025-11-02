@@ -33,7 +33,7 @@ Traditional attendance systems (manual roll‑calls, sign‑in sheets) are time�
 2. Create and activate a Python virtual environment (recommended).  
 3. Install the required dependencies:  
    ```bash
-   pip install ‑r requirements.txt
+   pip freeze > requirements.txt
    ```  
 4. Populate the `known_faces/` folder with one image of each person you want to track.  
 5. Run the `train.py` script to generate face encodings:  
