@@ -39,18 +39,18 @@ Traditional attendance systems (manual roll‑calls, sign‑in sheets) are time�
 4. Populate the `known_faces/` folder with one image of each person you want to track.  
 5. Run the `train.py` script to generate face encodings:  
    ```bash
-   python train.py
+   python encoder.py
    ```  
 6. Start the recognition system:  
    ```bash
-   python recognize.py
+   python main.py
    ```  
    The script will access your webcam, detect and identify faces, and log attendance accordingly.
 
 ## ✅ Usage Notes  
 - Ensure adequate lighting and clear visibility of faces for better recognition accuracy.  
 - Use a consistent background if possible to improve detection robustness.  
-- Update `attendance_log.csv` or adapt the script if you want a different storage (e.g., database).  
+- Update `StudentData.json` or adapt the script if you want a different storage (e.g., database).  
 - You may want to adjust recognition thresholds (e.g., match tolerance) in the code to balance accuracy vs false‑positives.
 
 ## 🔧 Dependencies  
