@@ -17,12 +17,11 @@ Traditional attendance systems (manual roll‑calls, sign‑in sheets) are time�
 ```
 /Realtime‑Face‑Recognition‑Attendance‑System  
 │  
-├── known_faces/              ← Folder of images of registered persons  
-├── encodings.pickle          ← Serialized face encodings of known faces  
-├── attendance_log.csv        ← Log file of attendance records  
-├── recognize.py              ← Main script for running recognition & logging  
-├── train.py                  ← Script to register new persons and generate encodings  
-├── requirements.txt          ← Python dependencies  
+├── Images/              ← Folder of images of registered persons  
+├── encodedImages.p          ← Serialized face encodings of known faces  (It will be generated whenever runs the main.py)
+├── StudentData.json        ← Log file of attendance records  
+├── main.py              ← Main script for running recognition & logging  
+├── enconder.py                  ← Script to register new persons and generate encoding 
 └── README.md                 ← This document  
 ```
 
