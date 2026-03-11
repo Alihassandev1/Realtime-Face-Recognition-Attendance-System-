@@ -4,7 +4,7 @@ from time import sleep
 import json, tqdm
 
 
-with open('out.json', 'r') as f:
+with open('StudentData.json', 'r') as f:
     data = json.load(f)
 
 print('Loading Encoded Files...')
@@ -79,6 +79,6 @@ source.release()
 cv2.destroyAllWindows()
 
 print('Updating Student Data....')
-with (open('out.json', 'w')) as f:
+with (open('StudentData.json', 'w')) as f:
     json.dump(data, f, indent=4)
 print('Update Data Sucessfully!\nfile Saved!')
